@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembler</title>
+    <link rel="stylesheet" href="STL1.css">
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-center container">
+            <h1>TWO PASS ASSEMBLER</h1>
+        </div>
+    </nav>
+
+    <div class="container place">
+
+        <label id="lvl" for="pass1">ENTER ASSEMBLY CODE</label><br><br>
+
+
+        <!-- <br><br> -->
+
+<div class="bndry1">
+        <div class="fulline">
+            <div class="text1">
+                <label for="text1" style="font-family:fantasy;">ASSEMBLY CODE</label>
+                <textarea id="pass1" placeholder="Enter your assembly code here......."></textarea>
+            </div>
+
+            <div class="textt">
+
+                <label for="op" style="font-family:fantasy;">OPTAB</label>
+                <textarea id="op" placeholder="Your opcode will display here"></textarea>
+            </div>
+        </div>
+        <br><br>
+        <div class="uplod">
+            <div class="div1">
+                <input type="file" name="file" id="file1" accept=".txt">
+                <button id="btn1">load src</button>
+                <button id="btnsave1">Save src</button>
+                <button id="clrsrc">Clear src</button>
+                
+            </div>
+
+            <div class="div2">
+                <input type="file" id="file2" accept=".txt">
+                <button id="btn2">Upload op</button>
+                <button id="btnsave2">Save op</button>
+                <button id="clrop">Clear op</button>
+                <!-- <button id="btnsave2">Save op</button> -->
+            </div>
+
+        </div>
+    </div>
+        <button id="btnp1">ASSEMBLE PASS ONE</button>
+<div class="bndry1">
+
+
+        <h3>OUTPUT FOR PASS 1</h3>
+        <div class="fulline">
+            <div class="text1">
+                <H5>INTERMEDIATE FILE</H5>
+                <textarea id="output1" placeholder="You will get INTERMEDIATE FILE for pass 1 here"></textarea>
+            </div>
+            <div class="textt">
+                <H5>SYMTAB</H5>
+                <textarea id="symtab" placeholder="Your symtab will display here"></textarea>
+            </div>
+        </div>
+
+        <div class="uplod">
+            <div class="div1">
+                <button id="btnsave3">SAVE FILE</button>
+                <button id="clrout1">Clear Text</button>
+            </div>
+            <div class="div2">
+                <button id="btnsave4">SAVE FILE</button>
+                <button id="clrsym">Clear Text</button>
+            </div>
+        </div>
+
+    </div>
+        <button id="btnp2">ASSEMBLE PASS TWO</button>
+<div class="bndry1">
+
+
+        <h3>OUTPUT FOR PASS 2</h3>
+        <div class="text1">
+            <textarea readonly id="output2" placeholder="You will get output for pass 2 here"></textarea>
+        </div>
+        <!-- <textarea readonly id="output2" placeholder="You will get output for pass 2 here"></textarea> -->
+        <div>
+            <button id="btnsave5">Save File</button>
+            <button id="clrout2">Clear Text</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div>
+        <footer class="footer">
+            <div class="footer-center">
+                <p>&copy; 2024 <span>Two Pass Assembler</span> All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="Scriptasmb.js"></script>
+</body>
