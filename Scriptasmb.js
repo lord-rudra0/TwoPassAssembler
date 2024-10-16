@@ -449,10 +449,6 @@
         // Event listener for Pass Two button
         document.getElementById("btnp2").addEventListener("click", passTwo);
 
-        //if i click btnp1 then div bndry1 displayed  and for btnp2 bndry2  displayed else hide should be else 
-
-       //when i touch btnp1 it will block the diplay style of bndry2 and when i touch btnp2 it will block the display style of bndry3
-
        document.getElementById("btnp1").addEventListener('click', function() {
         showDiv('bndry2');
     });
