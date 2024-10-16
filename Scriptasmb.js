@@ -20,8 +20,8 @@
             ['TIO', 'F8'], ['TIX', '2C'], ['TIXR', 'B8'], ['WD', 'DC'],
         ]);
 
-        const symtab = new Map(); // Symbol table to store labels and addresses
-        let locctr = 0; // Location counter
+        const symtab = new Map(); 
+        let locctr = 0;
         let start = 0;
 
         // Upload File and Populate Assembly Code
@@ -245,6 +245,8 @@
         // Event listener for Pass One button
         document.getElementById("btnp1").addEventListener("click", passOne);
 
+        //if i click btnp1 then div bndry1 displayed  and for btnp2 bndry2  displayed else hide should be else 
+
         function pass1(inputArr, optabArr) {
             let locctr = 0, i = 1, prev, top = 0, pos = -1
             let interAddr = []
@@ -446,3 +448,26 @@
 
         // Event listener for Pass Two button
         document.getElementById("btnp2").addEventListener("click", passTwo);
+
+        //if i click btnp1 then div bndry1 displayed  and for btnp2 bndry2  displayed else hide should be else 
+
+       //when i touch btnp1 it will block the diplay style of bndry2 and when i touch btnp2 it will block the display style of bndry3
+
+       document.getElementById("btnp1").addEventListener('click', function() {
+        showDiv('bndry2');
+    });
+    
+    document.getElementById("btnp2").addEventListener('click', function() {
+        showDiv('bndry3');
+    });
+    
+    function showDiv(className) {
+       
+        document.querySelectorAll('.bndry').forEach(function(div) {
+            div.style.display = 'none';
+        });
+        
+        
+        document.querySelector('.' + className).style.display = 'block';
+    }
+    
