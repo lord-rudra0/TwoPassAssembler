@@ -242,6 +242,28 @@ textarea:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #d1e3f5;
+    color: rgb(24, 23, 23);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.footer a {
+    color: rgb(41, 88, 243);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(41, 243, 44);
+    drop-shadow: 0 0 5px rgba(41, 243, 44, 0.5);
+}
+
+
 @media (max-width: 768px) {
     .fulline {
         flex-direction: column;
@@ -321,95 +343,88 @@ textarea:focus {
 @media (max-width: 768px),
 (max-height: 600px) {
 
-    /* Make sure the container behaves responsively */
+
     .container {
         width: 100%;
         padding: 0 10px;
         margin: 0 auto;
     }
 
-    /* Adjust flex containers to align vertically */
+
     .fulline {
         display: flex;
         flex-direction: column;
-        /* Stack the elements vertically */
+
         width: 100%;
         align-items: center;
-        /* Center items to avoid floating */
     }
 
-    /* Text area containers (Assembly Code and OPTAB) */
     .text1,
     .textt {
         width: 100%;
-        /* Full width for text areas */
+
         margin-bottom: 15px;
-        /* Space between elements */
+
         display: block;
     }
 
-    /* Ensure text areas are properly aligned */
+
     textarea {
         width: 100%;
-        /* Full width for text areas */
+
         height: 120px;
-        /* Adjust height for smaller screens */
+
         box-sizing: border-box;
-        /* Include padding and borders within width */
+
         padding: 10px;
-        /* Ensure comfortable padding inside text areas */
+
         margin: 0 auto;
-        /* Center text areas */
-    }
 
-    /* Buttons container (Upload, Save, Clear) */
-    .uplod {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        /* Ensure buttons stay centered */
-    }
+        .uplod {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
 
-    /* Upload buttons (SRC and OP code) */
-    .div1,
-    .div2 {
-        width: 100%;
-        margin-bottom: 10px;
-        /* Add spacing between button sets */
-        display: flex;
-        flex-direction: column;
-        /* Stack buttons vertically */
-        align-items: center;
-        /* Center align buttons */
-    }
+        .div1,
+        .div2 {
+            width: 100%;
+            margin-bottom: 10px;
 
-    /* Make buttons full width */
-    button {
-        width: 100%;
-        /* Full width buttons */
-        padding: 10px;
-        box-sizing: border-box;
-    }
+            display: flex;
+            flex-direction: column;
 
-    /* Heading adjustments for mobile */
-    h1,
-    h3,
-    h5 {
-        font-size: 1.2rem;
-        /* Smaller font size for headings */
-        text-align: center;
-    }
+            align-items: center;
+        }
 
-    /* Navbar adjustments for mobile */
-    .navbar {
-        padding: 1rem;
-        text-align: center;
-    }
 
-    /* Footer adjustments for mobile */
-    .footer {
-        text-align: center;
-        padding: 1rem;
+        button {
+            width: 100%;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+        h1,
+        h3,
+        h5 {
+            font-size: 1.2rem;
+
+            text-align: center;
+        }
+
+
+        .navbar {
+            padding: 1rem;
+            text-align: center;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+        }
     }
 }
